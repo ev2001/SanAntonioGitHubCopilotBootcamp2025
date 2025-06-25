@@ -1,6 +1,6 @@
-# San Antonio GitHub Copilot Global Bootcamp 2025
+# UrlListApp
 
-This is a sample ASP.NET Core web API project created for the San Antonio GitHub Copilot Bootcamp 2025. It demonstrates how to build minimal API endpoints using C# and .NET 9.
+UrlListApp is an ASP.NET Core web application included in the San Antonio GitHub Copilot Bootcamp 2025 workspace. It demonstrates how to build minimal API endpoints and a simple web UI using C# and .NET 9.
 
 ## Features
 
@@ -11,6 +11,9 @@ This is a sample ASP.NET Core web API project created for the San Antonio GitHub
   - `/greet`: Returns a welcome message for the bootcamp.
 - **Rain Prediction Endpoint**
   - `/willitrain`: Randomly tells you if it will rain or not.
+- **MVC Pages**
+  - Razor Pages for home, privacy, and error handling.
+  - Bootstrap-based layout and static assets in `wwwroot/`.
 
 ## How to Run
 
@@ -19,12 +22,13 @@ This is a sample ASP.NET Core web API project created for the San Antonio GitHub
 
 2. **Build and Run the Project:**
    ```bash
-   dotnet run --project SanAntonioGitHubCopilotBootcamp2025/SanAntonioGitHubCopilotBootcamp2025.csproj
+   dotnet run --project UrlListApp/UrlListApp.csproj
    ```
-   The API will be available at `https://localhost:5001` (or the port shown in the terminal).
+   The app will be available at `https://localhost:5001` (or the port shown in the terminal).
 
-3. **Explore the Endpoints:**
-   - Use a browser or API tool (like Postman or curl) to access the endpoints:
+3. **Explore the App:**
+   - Visit the root URL in your browser to see the web UI.
+   - Use API tools (like Postman or curl) to access the endpoints:
      - `GET /weatherforecast`
      - `GET /weatherforecast/{city}`
      - `GET /greet`
@@ -35,8 +39,10 @@ This is a sample ASP.NET Core web API project created for the San Antonio GitHub
 
 ## Project Structure
 
-- `SanAntonioGitHubCopilotBootcamp2025/Program.cs`: Main entry point and endpoint definitions.
-- `SanAntonioGitHubCopilotBootcamp2025/`: Project files and configuration.
+- `UrlListApp/Program.cs`: Main entry point and endpoint definitions.
+- `UrlListApp/Pages/`: Razor Pages for the web UI.
+- `UrlListApp/wwwroot/`: Static files (CSS, JS, images, libraries).
+- `UrlListApp/Properties/`: Launch settings and configuration.
 
 ## Notes
 - All weather data and rain predictions are randomly generated for demonstration purposes.
@@ -44,7 +50,7 @@ This is a sample ASP.NET Core web API project created for the San Antonio GitHub
 
 ---
 
-Enjoy exploring minimal APIs with .NET and GitHub Copilot!
+Enjoy building with minimal APIs, Razor Pages, and GitHub Copilot!
 
 ## Further Learning/Resources
 * For students - [GitHub Student Developer Pack](https://education.github.com/pack)
